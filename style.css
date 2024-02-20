@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("./fonts/Roboto-Regular.ttf");
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto';
+    background-color: black;
+    color: #a3e635;
+}
+
+.home-link{
+    text-decoration: none;
+    /* color: green; */
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    width: max-content;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+header{
+    margin: 0;
+    background-color: black;
+    
+}
+
+.home-link p{
+    font-family: 'Roboto';
+    color: #bef264;
+    margin: 0;
+
+    /* color:linear-gradient(red,blue);
+    color:linear-gradient(red,blue); */
+}
+
+nav{
+    /* display: flex;
+    align-items: center; */
+    border-bottom: 2px solid black;
+    background-color: black;
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 600;
+    gap: 40px;
+    padding:10px 10px;
+}
+
+ul a{
+    
+    list-style: none;
+    padding: 2px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+
+ul a:hover{
+    border-bottom: 3px solid #bef264;
+    transition: 0.2s all ease-in;
+}
+
+ul a{
+    color: #bef264;
+    text-decoration: none;
+
+}
+
+
+.side-btn div{
+    width: 30px;
+    height: 5px;
+    border-radius: 4px;
+    background-color: #bef264;
+    transition: 0.2s all ease-in;
+}
+
+.side-btn{
+    margin: 15px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.side-btn:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.fm{
+    transform: rotate(42deg);
+    transform-origin: left;
+}
+
+.sm{
+    visibility: hidden;
+}
+
+.em{
+    transform: rotate(-45deg);
+    transform-origin: left;
+
+}
+
+.hd{
+    left: -1000%;
+}
+
+@media screen and (max-width:600px){
+    nav{
+        /* display: none; */
+        left: 0%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        transition: 0.23s all ease-in;
+    }
+
+    ul{
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .side-btn{
+        display: flex;
+    }
+}
