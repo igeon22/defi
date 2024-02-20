@@ -25,8 +25,8 @@ body{
 }
 
 .logo{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 header{
@@ -101,7 +101,7 @@ ul a{
 
 .side-btn div{
     width: 30px;
-    height: 5px;
+    height: 2px;
     border-radius: 4px;
     background-color: #ffffff;
     transition: 0.2s all ease-in;
@@ -130,7 +130,7 @@ ul a{
 
 
 .fm{
-    transform: rotate(42deg);
+    transform: rotate(45deg);
     transform-origin: left;
 }
 
@@ -141,6 +141,8 @@ ul a{
 .em{
     transform: rotate(-45deg);
     transform-origin: left;
+    position: absolute;
+    bottom: -150%;
 
 }
 
@@ -164,8 +166,8 @@ ul a{
     }
 
     .logo{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 
     ul{
