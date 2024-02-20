@@ -3,6 +3,10 @@
     src: url("./fonts/Roboto-Regular.ttf");
 }
 
+html{
+    -webkit-tap-highlight-color: transparent;
+}
+
 body{
     margin: 0;
     font-family: 'Roboto';
@@ -97,6 +101,12 @@ ul a{
     cursor: pointer;
     opacity: 0.9;
 }
+
+.side-btn div:active{
+    background-color: transparent;
+}
+
+
 
 .fm{
     transform: rotate(42deg);
