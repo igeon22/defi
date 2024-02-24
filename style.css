@@ -34,11 +34,21 @@ body{
 }
 
 header{
+    position: fixed;
+    top: 0;
     margin: 0;
+    left: 0;
     background-color: black;
     display: flex;
     align-items: center;
     padding: 10px 15px;
+    width: 99vw;
+    box-sizing: border-box;
+    transition: 0.2s all ease-in;
+}
+
+.hidden {
+    transform: translateY(-100%);
 }
 
 .logo-container{
@@ -165,8 +175,15 @@ ul a{
     justify-content: center;
     /* background-color: yellow; */
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 110px;
     gap: 20px;
+
+    
+}
+
+.visible {
+    opacity: 1;
+    left: 0%;
 }
 
 .cont{
@@ -180,6 +197,8 @@ ul a{
 }
 
 .pres-txt{
+    /* opacity: 0; */
+    transition: opacity 0.5s ease;
     /* justify-self: center; */
     font-weight: bold;
     /* display: flex;
@@ -307,8 +326,14 @@ ul a{
     background-color: rgb(244, 244, 244);
     color: white;
 }
+
+.visible{
+    opacity: 1;
+}
 .features{
-    
+    /* opacity: 0; */
+    /* left: -100%; */
+    transition: opacity 0.5s ease;
     display: grid;
     gap: 25px;
     justify-items: center;
