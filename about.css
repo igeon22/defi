@@ -1,0 +1,38 @@
+body{
+    color: white;
+}
+
+
+.main{
+    padding: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1{
+    color: #22c55e;
+}
+
+.strong{
+    font-weight: bold;
+    color: #22c55e;
+    font-size: 1.4rem;
+}
+
+p{
+    font-size: 1.3rem;
+    /* word-break: keep-all; */
+}
+
+@media screen and (max-width:700px) {
+    h1{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+
+    .strong{
+        font-size: 1.3rem;
+    }
+}
