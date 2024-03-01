@@ -20,6 +20,7 @@ h1{
 }
 
 p{
+    font-family: helvetica;
     font-size: 1.3rem;
     /* word-break: keep-all; */
 }
